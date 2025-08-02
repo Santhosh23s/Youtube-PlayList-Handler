@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Playlist Handler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">YouTube Playlist Handler</h1>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Playlists</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>Your Playlists</h2>
+    <div id="playlistContainer" class="playlist-container"></div>
+  </main>
+
+  <button id="addBtn" class="add-btn">+</button>
+
+<!-- Single Reusable Modal -->
+<div id="videoModal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modalTitle">Add YouTube Video</h3>
+    <form id="videoForm">
+      <input type="text" id="title" placeholder="Video Title" required />
+      <textarea id="description" placeholder="Video Description" required></textarea>
+      <input type="url" id="youtubeUrl" placeholder="YouTube Link" required />
+      <input type="text" id="playlistName" placeholder="Playlist Name" required />
+      <div class="form-actions">
+        <button type="button" id="closeModal" class="cancel-btn">Cancel</button>
+        <button type="submit" id="submitBtn" class="add-btn-form">Add</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
